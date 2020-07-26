@@ -1,13 +1,111 @@
-body {
+p {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.product-box {
+  display: inline-block;
+  width: 30vw;
+  margin-right: 2vw;
+}
+.image-box {
+  display: inline-block;
+  width: 14vw;
+  vertical-align: top;
+}
+.product-image {
+  width: 100%;
+}
+.info-box {
+  margin-left: 2vw;
+  display: inline-block;
+  width: 14vw;
+  vertical-align: top;
+}
+.name-box {
+  font-size: 0.9em;
+  margin-top: 1.5vw;
+  width: 100%;
+  height: 2.4em;
+  line-height: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.discount {
+  margin-top: 0.9em;
+  font-size: calc(0.8*0.9em);
+  color: lightgrey;
+}
+.progress {
+  position: relative;
+  min-width: 100%;
+  height: 0.54em;
+  background-color: #ffd9d7;
+  border-radius: 0.27em;
+}
+.progress:before {
+  position: absolute;
+  width: inherit;
+  height: 100%;
+  background-color: #fe366e;
+  content: '';
+  text-align: center;
+  border-top-left-radius: 0.27em;
+  border-bottom-left-radius: 0.27em;
+}
+.percentage {
+  font-size: 0.72em;
+  font-weight: bold;
+  color: #fe366e;
+  float: left;
+}
+.boughtNum {
+  font-size: 0.72em;
+  font-weight: bold;
+  color: #fe366e;
+  float: right;
+}
+.price-list {
+  clear: both;
+  margin-top: 0.9em;
+}
+.priceNow {
+  color: #e8aa38;
+  font-size: 1.08em;
+}
+.pricePrev {
+  color: lightgrey;
+  padding-left: 0.9em;
+  font-size: 0.72em;
+  text-decoration: line-through;
+}
+.change-button {
+  font-size: 0.9em;
+  color: lightgrey;
+  float: right;
+  margin-right: 1em;
+  height: 1.2em;
+}
+.change-button:hover {
+  text-decoration: underline;
+}
+.products-container {
+  clear: both;
+  padding-top: 1.2em;
+}
+.title {
+  float: left;
+  height: 1.2em;
+}
+.count-down {
+  float: left;
+  margin-left: 0.9em;
+  height: 1.2em;
+}
+.time {
+  color: #fe366e;
+  background-color: #f5bc42;
+  font-weight: bold;
+  padding: 0 0.45em 0 0.45em;
 }
